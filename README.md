@@ -1,6 +1,7 @@
 # Another-mnistPredictor-in-tensorflow-but-you-can-use-it
 
-## Esta es una implementacion de uan red neuronal para predecir digitos escritos a mano pero cree una aplicacion de tkinter para poder escribir numeros y que el modelo haga la prediccion.
+## Esta es la implementacion clásica por mi parte de una red neuronal para predecir digitos escritos a mano pero cree una aplicacion de tkinter para poder escribir numeros y que el modelo haga la prediccion.
+
 La predicción de números escritos a mano con Tensorflow. Es ya una tarea clásica para estudiantes de Redes Neuronales.
 
 Vamos a entrenar un modelo de red neuronal utilizando el conjunto de datos MNIST, que consiste en imágenes de dígitos escritos a mano. 

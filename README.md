@@ -25,14 +25,14 @@ Creamos el modelo de red neuronal utilizando la API de Keras. El modelo consta d
 
 ### Paso 4: Compilar el modelo
 Se compila el modelo especificando el optimizador, la función de pérdida y las métricas que se utilizarán durante el entrenamiento. En este caso, se utiliza el optimizador [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980), la función de pérdida sparse_categorical_crossentropy (apropiada para clasificación multiclase) y se mide la precisión.
-![Funcion de perdida](media/loss.jpg)
+![Funcion de perdida](media/loss.png)
 
 ### Paso 5: Entrenar el modelo
 Se entrena el modelo utilizando los datos de entrenamiento durante 50 epochs. Durante el entrenamiento, el modelo aprenderá a reconocer y clasificar los dígitos de el dataset MNIST
 
 ### Paso 6: Evaluar el modelo con el conjunto de prueba.
 
-![Grafica de perdida y precision](media/grafico)
+![Grafica de perdida y precision](media/grafica.png)
 
 Una vez entrenado el modelo, se evalúa su rendimiento utilizando el conjunto de prueba. Se calcula la pérdida y la precisión del modelo en este conjunto. La precisión indica qué tan bien clasifica el modelo los dígitos en el conjunto de prueba.
 

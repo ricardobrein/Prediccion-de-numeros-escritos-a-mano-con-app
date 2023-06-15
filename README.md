@@ -76,7 +76,7 @@ Si queremos probar la app con ejemplos reales, que mejor que poder dibujar el n�
 Esto creará una carpeta en el directorio donde estes trabajando.
 
 1. La app de tkinter, tiene la dependencia de PILLOW y numpy para procesar imagenes.
-2. Creamos una interfaz para dibujar el número con el mouse y una vez dibujado, una función para procesar el digito y que esté en el formato adecuado.
+2. Creamos una interfaz para dibujar el número con el mouse y una vez dibujado, una función para procesar el digito, por ejemplo redimensionar y cambiarle el fondo para que se parezcan a los digitos mnist y que esten en el formato adecuado.
 3. Creamos la función de predicción que nos dirá que número puede ser el que se ha dibujado.
  
 Puedes ver el código completo [aqui](tkinter_prediction_app.py)

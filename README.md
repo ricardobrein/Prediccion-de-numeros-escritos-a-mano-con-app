@@ -1,5 +1,7 @@
 # Another-mnistPredictor-in-tensorflow-pero-puedes-usarlo
 
+[Predictor con interfaz para dibujar](media/gif_pred.gif)
+
 ## Esta es, la implementacion de una red neuronal para predecir digitos escritos a mano. Pero esta vez, he creado una aplicacion de tkinter para poder escribir números y que el modelo nos diga la prediccion.
 
 La identificación de números escritos a mano mediante redes neuronales es una tarea clave en la visión por computadora. Utilizando conjuntos de datos etiquetados, **como el conjunto de datos MNIST**, que contiene miles de imágenes de números y sus etiquetas reales. Estos modelos aprenden a reconocer y clasificar dígitos numéricos lo cual tiene aplicaciones en procesamiento de imágenes, digitalización de documentos, clasificación automática de formularios y detección de fraudes.

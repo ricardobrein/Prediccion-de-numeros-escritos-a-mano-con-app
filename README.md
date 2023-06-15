@@ -1,6 +1,6 @@
 # Another-mnistPredictor-in-tensorflow-pero-puedes-usarlo
 
-[Predictor con interfaz para dibujar](media/gif_pred.gif)
+![Predictor con interfaz para dibujar](media/gif_pred.gif)
 
 ## Esta es, la implementacion de una red neuronal para predecir digitos escritos a mano. Pero esta vez, he creado una aplicacion de tkinter para poder escribir números y que el modelo nos diga la prediccion.
 

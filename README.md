@@ -66,6 +66,19 @@ Se entrena el modelo utilizando los datos de entrenamiento durante 50 epochs. Du
 
 Una vez entrenado el modelo, se evalúa su rendimiento utilizando el conjunto de prueba. Se calcula la pérdida y la precisión mientras veía las imágenes de prueba. La precisión indica qué tan bien clasifica el modelo los dígitos que nunca ha visto.
 
+## Creación de la app de Tkinter para dibujar el número
+
+Si queremos probar la app con ejemplos reales, que mejor que poder dibujar el número en la pantalla y que este nos diga cual es, para este experimento lo primero que debemos hacer es guardar el modelo que creamos.
+
+    model.save('modelo_mnist_keras')
+Esto creará una carpeta en el directorio donde estes trabajando.
+
+1. La app de tkinter, tiene la dependencia de PILLOW y numpy para procesar imagenes.
+2. Creamos una interfaz para dibujar el número con el mouse y una vez dibujado, una función para procesar el digito y que esté en el formato adecuado.
+3. Creamos la función de predicción que nos dirá que número puede ser el que se ha dibujado.
+ 
+Puedes ver el código completo [aqui](tkinter_prediction_app.py)
+
 ## Algunas dudas que me surgieron e investigué un poco.
 
 - **Por que en los libros veia 64, 128 y hasta 1024 unidades en la capa oculta Dense (totalmente conectada)?**
@@ -88,8 +101,14 @@ Cuando se aplica la función ReLU a una neurona, si la entrada es mayor que cero
 
 [Más sobre ReLU](https://es.wikipedia.org/wiki/Rectificador_(redes_neuronales))
 
-**Espero que esta breve explicación ayude a comprender un poco mejor algunos conceptos de el maravilloso 🌠Deep learning🌠, a mi me ha servido bastante para practicar y entender algunos principios de redes neuronales**
+
+Espero que esta breve explicación ayude a comprender un poco mejor algunos conceptos de el impresionante 🌠Deep learning🌠, a mi me ha servido bastante para practicar y entender los principios de redes neuronales
+
+### Conocimiento y agradecimientos:
+- https://github.com/rasbt/python-machine-learning-book-3rd-edition
+- https://twitter.com/santiagohramos
 
 ### Gracias por leer.✔️
+
 
 

@@ -5,10 +5,10 @@
 La identificación de números escritos a mano mediante redes neuronales es una tarea clave en la visión por computadora. Utilizando conjuntos de datos etiquetados, **como el conjunto de datos MNIST**, que contiene miles de imágenes de números y sus etiquetas reales. Estos modelos aprenden a reconocer y clasificar dígitos numéricos lo cual tiene aplicaciones en procesamiento de imágenes, digitalización de documentos, clasificación automática de formularios y detección de fraudes.
 
 **Como he mencionado, vamos a entrenar un modelo de red neuronal utilizando el conjunto de datos [MNIST](https://datascience.eu/es/procesamiento-del-lenguaje-natural/base-de-datos-del-mnist/#:~:text=la%20base%20de%20datos%20del,sistemas%20de%20manejo%20de%20im%C3%A1genes.)**
-<img src="media/mnist2.png" alt="Numero 5 de MNIST" style="width:250px;">
+<img src="media/mnist2.png" alt="Numero 5 de MNIST" style="width:700px;">
 
 
-### A continuación, te explico cada uno de los pasos de manera sencilla, tambien puedes ver el código en el Jupyter notebook de este repositorio.
+### 👨‍🏫 Voy a intentar explicar cada uno de los pasos de manera sencilla y tambien puedes ver el código en el Jupyter notebook de este repositorio.
 
 ### Paso 1: Importar librerias y Cargar el dataset MNIST
 
@@ -22,12 +22,12 @@ Se carga el dataset MNIST que contiene las imágenes de entrenamiento y prueba, 
 
 ### Paso 2: Preprocesamiento de los datos
 
-Ya que las imagenes MNIST estan en escala de grises y miden 28x28 pixeles, Se realiza un preprocesamiento de los datos dividiendo los valores de píxeles entre 255 para normalizarlos y asegurarse de que estén en un rango de 0 a 1. La escala de grises generalmente se representa en números de 0 a 255.
+     x_train = x_train / 255.0 
+     x_test = x_test / 255.0
 
-**Esto facilita el procesamiento para la red neuronal.**
+Las imagenes de MNIST están en escala de grises. Primero se realiza un preprocesamiento de los datos dividiendo los valores de cada pixel entre 255 para normalizarlos y que estén en un rango de 0 a 1. La escala de grises generalmente se representa en números de 0 a 255.
 
-    x_train = x_train / 255.0 
-    x_test = x_test / 255.0
+**Esto facilita el paso por la red neuronal.**
 
 > En este rango, el valor 0 representa el **negro absoluto (sin intensidad de luz)** y el valor 255 representa el **blanco absoluto** (máxima intensidad de luz).
 >> La razón por la cual se utiliza el rango de 0 a 255 es por la representación de 8 bits, donde cada píxel en una imagen _en blanco y negro_, se almacena como un valor de 8 bits (1 byte). Con 8 bits, se pueden representar 2^8 = 256 valores distintos, es decir, desde 0 hasta 255. Cada valor representa un nivel de intensidad de luz en la escala de grises.
@@ -54,7 +54,7 @@ Ya que las imagenes MNIST estan en escala de grises y miden 28x28 pixeles, Se re
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
               
-Básicamente, compilar es definir el modelo y sus hiperparámetros, especificando el optimizador, la función de pérdida y las métricas que se utilizarán durante el entrenamiento. En este caso, se utiliza el optimizador [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980), la función de pérdida sparse_categorical_crossentropy es apropiada para clasificación multiclase además medimos la precisión.
+Básicamente, compilar es definir el modelo y sus hiperparámetros, especificando el optimizador, la función de pérdida y las métricas que se utilizarán durante el entrenamiento. En este caso, se utiliza el optimizador [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980), la función de pérdida **sparse_categorical_crossentropy** es apropiada para clasificación multiclase además medimos la precisión.
 ![Funcion de perdida](media/loss.png)
 
 ### Paso 5: Entrenar el modelo.
@@ -83,11 +83,13 @@ R: ReLU introduce _no linealidad_ en la red neuronal, lo que **permite al modelo
 - **¿Cómo funciona ReLU?**
 
 Cuando se aplica la función ReLU a una neurona, si la entrada es mayor que cero, la salida será igual a la entrada. Si la entrada es menor o igual a cero, la salida será cero. En términos gráficos, la función ReLU traza una línea recta que comienza en el origen y se extiende hacia arriba en un ángulo de 45 grados.
-![ReLU](media/relu.jpg) 
-[ReLU wiki](https://es.wikipedia.org/wiki/Rectificador_(redes_neuronales))
 
-Espero que esta explicación ayude a comprender un poco mejor una red neuronal, a mi me ha servido bastante para entender los principios de las redes neuronales.
+<img src="media/relu.jpg" alt="ReLUT" style="width:400px;"> 
 
-### Gracias por leer.
+[Más sobre ReLU](https://es.wikipedia.org/wiki/Rectificador_(redes_neuronales))
+
+**Espero que esta breve explicación ayude a comprender un poco mejor algunos conceptos de el maravilloso 🌠Deep learning🌠, a mi me ha servido bastante para practicar y entender algunos principios de redes neuronales**
+
+### Gracias por leer.✔️
 
 

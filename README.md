@@ -4,10 +4,11 @@
 
 La identificación de números escritos a mano mediante redes neuronales es una tarea clave en la visión por computadora. Utilizando conjuntos de datos etiquetados, **como el conjunto de datos MNIST**, que contiene miles de imágenes de números y sus etiquetas reales. Estos modelos aprenden a reconocer y clasificar dígitos numéricos lo cual tiene aplicaciones en procesamiento de imágenes, digitalización de documentos, clasificación automática de formularios y detección de fraudes.
 
-Como he mencionado, vamos a entrenar un modelo de red neuronal utilizando el conjunto de datos [MNIST](https://datascience.eu/es/procesamiento-del-lenguaje-natural/base-de-datos-del-mnist/#:~:text=la%20base%20de%20datos%20del,sistemas%20de%20manejo%20de%20im%C3%A1genes.)
-[Mnist del número 5](media/mnist)
+**Como he mencionado, vamos a entrenar un modelo de red neuronal utilizando el conjunto de datos [MNIST](https://datascience.eu/es/procesamiento-del-lenguaje-natural/base-de-datos-del-mnist/#:~:text=la%20base%20de%20datos%20del,sistemas%20de%20manejo%20de%20im%C3%A1genes.)**
+<img src="media/mnist.png" alt="Numero 5 de MNIST" style="width:250px;">
 
-A continuación, te explico cada uno de los pasos de manera sencilla, tambien puedes ver el código en el Jupyter notebook de este repositorio.
+
+### A continuación, te explico cada uno de los pasos de manera sencilla, tambien puedes ver el código en el Jupyter notebook de este repositorio.
 
 ### Paso 1: Importar librerias y Cargar el dataset MNIST
 
@@ -82,7 +83,8 @@ R: ReLU introduce _no linealidad_ en la red neuronal, lo que **permite al modelo
 - **¿Cómo funciona ReLU?**
 
 Cuando se aplica la función ReLU a una neurona, si la entrada es mayor que cero, la salida será igual a la entrada. Si la entrada es menor o igual a cero, la salida será cero. En términos gráficos, la función ReLU traza una línea recta que comienza en el origen y se extiende hacia arriba en un ángulo de 45 grados.
-[ReLU](media/relu.jpge)
+![ReLU](media/relu.jpg) 
+[ReLU wiki](https://es.wikipedia.org/wiki/Rectificador_(redes_neuronales))
 
 Espero que esta explicación ayude a comprender un poco mejor una red neuronal, a mi me ha servido bastante para entender los principios de las redes neuronales.
 

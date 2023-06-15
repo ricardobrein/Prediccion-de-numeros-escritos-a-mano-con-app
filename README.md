@@ -5,7 +5,7 @@
 La identificación de números escritos a mano mediante redes neuronales es una tarea clave en la visión por computadora. Utilizando conjuntos de datos etiquetados, **como el conjunto de datos MNIST**, que contiene miles de imágenes de números y sus etiquetas reales. Estos modelos aprenden a reconocer y clasificar dígitos numéricos lo cual tiene aplicaciones en procesamiento de imágenes, digitalización de documentos, clasificación automática de formularios y detección de fraudes.
 
 **Como he mencionado, vamos a entrenar un modelo de red neuronal utilizando el conjunto de datos [MNIST](https://datascience.eu/es/procesamiento-del-lenguaje-natural/base-de-datos-del-mnist/#:~:text=la%20base%20de%20datos%20del,sistemas%20de%20manejo%20de%20im%C3%A1genes.)**
-<img src="media/mnist.png" alt="Numero 5 de MNIST" style="width:250px;">
+<img src="media/mnist2.png" alt="Numero 5 de MNIST" style="width:250px;">
 
 
 ### A continuación, te explico cada uno de los pasos de manera sencilla, tambien puedes ver el código en el Jupyter notebook de este repositorio.

@@ -73,7 +73,7 @@ Una vez entrenado el modelo, se evalúa su rendimiento utilizando el conjunto de
 Si queremos probar la app con ejemplos reales, que mejor que poder dibujar el número en la pantalla y que este nos diga cual es, para este experimento lo primero que debemos hacer es guardar el modelo que creamos.
 
     model.save('modelo_mnist_keras')
-Esto creará una carpeta en el directorio donde estes trabajando.
+**Esto creará una carpeta en el directorio donde estes trabajando.**
 
 1. La app de tkinter, tiene la dependencia de PILLOW y numpy para procesar imagenes.
 2. Creamos una interfaz para dibujar el número con el mouse y una vez dibujado, una función para procesar el digito, por ejemplo redimensionar y cambiarle el fondo para que se parezcan a los digitos mnist y que esten en el formato adecuado.

@@ -3,19 +3,17 @@
 
 ![Predictor con interfaz para dibujar](media/gif_pred.gif)
 
-## Esta es, la implementacion de una red neuronal para predecir digitos escritos a mano. Pero esta vez, he creado una aplicacion de tkinter para poder escribir números y que el modelo nos diga la prediccion.
+La identificación de números escritos a mano mediante redes neuronales es una tarea clásica en Deep Learning, sirve para tareas de visión por computadora. Utilizando conjuntos de datos etiquetados, **como el conjunto de datos MNIST**, que contiene miles de imágenes de números y sus etiquetas reales. Estos modelos aprenden a reconocer y clasificar dígitos numéricos.
 
-La identificación de números escritos a mano mediante redes neuronales es una tarea clave en la visión por computadora. Utilizando conjuntos de datos etiquetados, **como el conjunto de datos MNIST**, que contiene miles de imágenes de números y sus etiquetas reales. Estos modelos aprenden a reconocer y clasificar dígitos numéricos lo cual tiene aplicaciones en procesamiento de imágenes, digitalización de documentos, clasificación automática de formularios y detección de fraudes.
+Este tipo tareas tienen aplicaciones practicas en procesamiento de imágenes, digitalización de documentos, clasificación automática de formularios y detección de fraudes.
 
 **Como he mencionado, vamos a entrenar un modelo de red neuronal utilizando el conjunto de datos [MNIST](https://datascience.eu/es/procesamiento-del-lenguaje-natural/base-de-datos-del-mnist/#:~:text=la%20base%20de%20datos%20del,sistemas%20de%20manejo%20de%20im%C3%A1genes.)**
 <img src="media/mnist2.png" alt="Numero 5 de MNIST" style="width:700px;">
 
 
-### 👨‍🏫 Voy a intentar explicar cada uno de los pasos de manera sencilla y tambien puedes ver el código en el Jupyter notebook de este repositorio.
+### Voy a intentar explicar cada uno de los pasos de manera sencilla y tambien puedes ver el código en el repositorio.
 
-### Paso 1: Importar librerias y Cargar el dataset MNIST
-
-Se carga el dataset MNIST que contiene las imágenes de entrenamiento y prueba, así como las etiquetas correspondientes que indican qué dígito representa cada imagen.
+El dataset MNIST contiene las imágenes de entrenamiento y prueba, así como las etiquetas correspondientes que indican qué dígito representa cada imagen.
 
     import tensorflow as tf
     from tensorflow.keras.datasets import mnist
@@ -23,7 +21,7 @@ Se carga el dataset MNIST que contiene las imágenes de entrenamiento y prueba, 
   
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-### Paso 2: Preprocesamiento de los datos
+ **Preprocesamiento de los datos**
 
      x_train = x_train / 255.0 
      x_test = x_test / 255.0

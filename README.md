@@ -1,4 +1,5 @@
-# Another-mnistPredictor-in-tensorflow-pero-puedes-usarlo
+# Un Predictor de números escritos a mano utilizando el clásico dataset MNIST.
+### Viene incluida una pequeña interfaz con tkinter para probar el modelo escribiendo los número directamente con el mouse.
 
 ![Predictor con interfaz para dibujar](media/gif_pred.gif)
 
